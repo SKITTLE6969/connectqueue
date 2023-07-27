@@ -4,13 +4,15 @@ Config = {}
 -- a lot of the steamid converting websites are broken rn and give you the wrong steamid. I use https://steamid.xyz/ with no problems.
 -- you can also give priority through the API, read the examples/readme.
 Config.Priority = {
-    ["STEAM_0:1:0000####"] = 1,
-    ["steam:110000######"] = 25,
-    ["ip:127.0.0.0"] = 85
+	["steam:11000013df6ba81"] = 1, -- Nuwa
+	["steam:110000155010f12"] = 1, -- Niko
+	["steam:1100001147d0947"] = 1, -- Chabhi
+	["steam:110000137544afa"] = 1, -- Buzzar
+	["steam:110000109d6d48b"] = 1, -- SKITTLE
 }
 
 -- require people to run steam
-Config.RequireSteam = false
+Config.RequireSteam = true
 
 -- "whitelist" only server
 Config.PriorityOnly = false
@@ -28,7 +30,7 @@ Config.ConnectTimeOut = 600
 Config.QueueTimeOut = 90
 
 -- will give players temporary priority when they disconnect and when they start loading in
-Config.EnableGrace = false
+Config.EnableGrace = true
 
 -- how much priority power grace time will give
 Config.GracePower = 5
@@ -36,7 +38,7 @@ Config.GracePower = 5
 -- how long grace time lasts in seconds
 Config.GraceTime = 480
 
-Config.AntiSpam = false
+Config.AntiSpam = true
 Config.AntiSpamTimer = 30
 Config.PleaseWait = "Please wait %d seconds. The connection will start automatically!"
 
@@ -69,7 +71,7 @@ Config.Language = {
 }
 
 Config.enableDiscordWhitelist = false -- For Enable Whitelist System
-Config.discordServerGuild = "" -- Discord Server ID to check it if player is in the server
+Config.discordServerGuild = "787625976690901033" -- Discord Server ID to check it if player is in the server
 Config.discordBotToken = ""  -- Discord Token Bot - You Can Create at https://discord.com/developers/applications
 
 
